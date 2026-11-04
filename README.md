@@ -4,6 +4,9 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-UI-red.svg)](https://streamlit.io/)
 [![Docker](https://img.shields.io/badge/Docker-Sandbox-2496ED.svg)](https://www.docker.com/)
 [![Z3 Solver](https://img.shields.io/badge/Z3-Formal_Verification-green.svg)](https://github.com/Z3Prover/z3)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+![AETHER-OMNI Dashboard](docs/dashboard.png)
 
 **AETHER-OMNI** is an advanced software assurance and automated resilience framework that combines **Local LLM Swarms (Ollama)**, **Formal Symbolic Verification (Z3 Solver)**, and **Containerized Sandboxing (Docker)** to perform automated code audits, invariant proofs, and self-healing mutations.
 
@@ -23,13 +26,18 @@ The system is engineered around three core pillars:
 
 ```text
 aether-omni/
-├── config/                  # Configuration parameters and endpoints
+├── config/                 # Configuration parameters and endpoints
 ├── core/
 │   ├── __init__.py
-│   ├── swarm.py             # Ollama Multi-Agent Orchestrator
-│   ├── symbolic.py          # Z3 Solver Formal Verification Engine
-│   └── sandbox.py           # Docker Container Security Manager
+│   ├── swarm.py            # Ollama Multi-Agent Orchestrator
+│   ├── symbolic.py         # Z3 Solver Formal Verification Engine
+│   └── sandbox.py          # Docker Container Security Manager
 ├── dashboard/
-│   └── app.py               # Streamlit Telemetry & Control UI
-├── requirements.txt         # Project dependencies
-└── README.md                # Executive Documentation
+│   ├── app.py              # Streamlit Telemetry & Control UI
+│   └── dashboard.png       # Interface screenshot source
+├── docs/
+│   └── dashboard.png       # Visual documentation asset
+├── .gitignore              # Repository file exclusion rules
+├── LICENSE                 # MIT Open Source License
+├── requirements.txt        # Project dependencies
+└── README.md               # Executive Documentation
